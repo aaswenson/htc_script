@@ -1,7 +1,7 @@
 #!/bin/bash
 
-export    orig_dir=$PWD
-export install_dir=/tmp/$USER/opt                  # Location to install binaries, libraries, etc.
+export home=${PWD}
+export install_dir=/tmp/$USER/opt         # Location to install binaries, libraries, etc.
 
 # MCNP
 export DATAPATH=$install_dir/mcnp_data    # Location of MCNP data
