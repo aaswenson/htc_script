@@ -29,7 +29,7 @@ notification = never
 
 # Request resources
 request_cpus = 1
-request_memory = 2GB
-request_disk = 4GB
+request_memory = 500MB
+request_disk = 15GB
 
 queue comp_file from input_list.txt
