@@ -5,6 +5,6 @@ chmod -R 700 tmp
 mv *.tar* tmp/mouginot/opt/
 
 cd tmp/mouginot/opt/
-ls *.tar* | xargs tar -xvf 
+ls *.tar* | xargs tar -xf 
 rm *.tar*
 
