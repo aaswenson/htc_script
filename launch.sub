@@ -19,7 +19,7 @@ when_to_transfer_output = ON_EXIT
 
 # Indicate the executable to be run and any other input files needed
 executable = launch.bash
-transfer_input_files = launch.bash, htc_script/install_mcnp_mure_data.bash, htc_script/std_setup.bash, htc_script/load.bash, TRU_MOX_SOFT_lite.tar.gz
+transfer_input_files = /home/mouginot/htc_script/launch.bash, /home/mouginot/htc_script/install_mcnp_mure_data.bash, /home/mouginot/htc_script/std_setup.bash, /home/mouginot/htc_script/load.bash, /home/mouginot/TRU_MOX_SOFT.tar.gz
 
 # Command line arguments for the executable
 arguments =
