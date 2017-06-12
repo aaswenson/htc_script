@@ -5,9 +5,9 @@ universe = vanilla
 output = output/process_$(Cluster)_$(Process).out
 error = error/process_$(Cluster)_$(Process).err
 log = log/process_$(Cluster)_$(Process).log
-+IsBuildJob = true
+#+IsBuildJob = true
 #requirements = (Target.HasGluster == true) && (OpSysAndVer =?= "SL6") && (IsBuildSlot == true)
-requirements = (Target.HasGluster == true) && (OpSysAndVer =?= "SL6") && (IsBuildSlot == true)
+requirements = (Target.HasGluster == true) && (OpSysAndVer =?= "SL6") 
 
 # Copy environment variables from the submit node
 getenv = True
@@ -29,7 +29,7 @@ notification = never
 
 # Request resources
 request_cpus = 1
-request_memory = 500MB
-request_disk = 15GB
+request_memory = 1GB
+request_disk = 80GB
 
 queue comp_file from input_list.txt
