@@ -18,7 +18,7 @@ should_transfer_files = YES
 when_to_transfer_output = ON_EXIT
 
 # Indicate the executable to be run and any other input files needed
-executable = /home/mouginot/htc_script/launch.bash 
+executable = /home/mouginot/htc_script/mure.bash 
 transfer_input_files = /home/mouginot/htc_script/install_mcnp_mure_data.bash, /home/mouginot/htc_script/std_setup.bash, /home/mouginot/htc_script/load.bash, /home/mouginot/TRU_MOX_SOFT.tar.gz, input/$(comp_file)
 
 # Command line arguments for the executable
@@ -29,7 +29,7 @@ notification = never
 
 # Request resources
 request_cpus = 1
-request_memory = 1GB
-request_disk = 80GB
+request_memory = 500MB
+request_disk = 40GB
 
 queue comp_file from input_list.txt
