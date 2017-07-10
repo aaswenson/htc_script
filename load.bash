@@ -108,3 +108,16 @@ export PATH=$install_dir/HTC_tool:$PATH
 
 # GLIBC
 export LD_LIBRARY_PATH=$install_dir/glibc/lib:$LD_LIBRARY_PATH
+
+#ROOT
+export ROOTSYS=$install_dir/root
+export PATH=${PATH}:${ROOTSYS}/bin
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:$ROOTSYS/lib/"
+
+export CLASS_PATH=${install_dir}/CLASS
+export CLASS_include=${CLASS_PATH}/source/include
+export CLASS_DB=${CLASS_PATH}/Database
+export CLASS_lib=${CLASS_PATH}/lib
+export PATH=${PATH}:${CLASS_PATH}/gui/bin
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${CLASS_lib}"
+
