@@ -19,7 +19,7 @@ when_to_transfer_output = ON_EXIT
 
 # Indicate the executable to be run and any other input files needed
 executable = /home/mouginot/htc_script/cyclus.bash 
-transfer_input_files = /home/mouginot/htc_script/std_setup.bash, /home/mouginot/htc_script/load.bash, /home/mouginot/cyclus.tar.gz, input/$(comp_file), input/$(file).xml
+transfer_input_files = /home/mouginot/htc_script/std_setup.bash, /home/mouginot/htc_script/load.bash, /home/mouginot/install_cyclus.tar.gz, input/$(comp_file), input/$(file).xml
 
 # Command line arguments for the executable
 arguments = $(file)
@@ -29,7 +29,7 @@ notification = never
 
 # Request resources
 request_cpus = 1
-request_memory = 500MB
-request_disk = 40GB
+request_memory = 1GB
+request_disk = 10GB
 
 queue file from input_list.txt

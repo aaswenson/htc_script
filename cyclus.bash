@@ -1,6 +1,6 @@
 #!/bin/bash
 
-line="$(cat $1).xml"
+line="$1.xml"
 
 source load.bash
 source ${home}/std_setup.bash
