@@ -19,7 +19,7 @@ when_to_transfer_output = ON_EXIT
 
 # Indicate the executable to be run and any other input files needed
 executable = /home/mouginot/htc_script/mure_run_tar_send.bash
-transfer_input_files = /home/mouginot/htc_script/install_mcnp_mure_datai_PSPEC.bash, /home/mouginot/htc_script/std_setup.bash, /home/mouginot/htc_script/load.bash, /home/mouginot/PWR_MOX_TRU_PSPEC_GEOM.tar.gz, .ssh/.netrc, input/$(comp_file)
+transfer_input_files = /home/mouginot/htc_script/install_mcnp_mure_data_PSPEC.bash, /home/mouginot/htc_script/std_setup.bash, /home/mouginot/htc_script/load.bash, /home/mouginot/PWR_MOX_TRU_PSPEC_GEOM.tar.gz, /home/mouginot/.ssh/.netrc, input/$(comp_file)
 
 encrypt_input_files = .ssh/.netrc
 

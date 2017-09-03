@@ -5,7 +5,7 @@ line=$(cat $1)
 source load.bash
 source ${home}/std_setup.bash
 source ${home}/install_mcnp_mure_data_PSPEC.bash
-cd TRU_MOX_SOFT
+cd PWR_MOX_TRU_PSPEC
 
 # compilation
 g++  -o MOX MOX.cc -I$MURE_include -I$MURE_ExternalPkg -L$MURE_lib -lMUREpkg -lvalerr -lmctal -fopenmp
@@ -19,8 +19,9 @@ rm U5*.dat U5*.log U5*.info
 tar -zcf ${1}_raw.tar.gz U5*
 
 # sending to box
+cp $home/.netrc ~/
 curl -1 -v --disable-epsv --ftp-skip-pasv-ip --ftp-ssl --upload-file ${1}_raw.tar.gz  -netrc ftp://ftp.box.com/MODEL_DATA/PWR_TRU_MOX_PSPEC/${1}_raw.tar.gz
-
+rm -rf ~/.netrc
 
 # backup the rest
 mv ${1}.tar.gz ${home}/
