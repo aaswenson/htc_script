@@ -1,6 +1,6 @@
 #!/bin/bash
 
-line="$1.xml"
+line="input.xml"
 
 source load.bash
 source ${home}/std_setup.bash
