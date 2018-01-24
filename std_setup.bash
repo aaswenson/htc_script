@@ -1,10 +1,10 @@
 #!/bin/bash
 
-mkdir -p tmp/mouginot/opt
+mkdir -p tmp/aaswenson/opt
 chmod -R 700 tmp
-mv *.tar* tmp/mouginot/opt/
+mv *.tar* tmp/aaswenson/opt/
 
-cd tmp/mouginot/opt/
+cd tmp/aaswenson/opt/
 ls *.tar* | xargs tar -xf 
 rm *.tar*
 
